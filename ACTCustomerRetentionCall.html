@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACT Fibernet – Customer Retention Call Assist</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 16px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        header {
+            background: linear-gradient(#ee2c49);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+        header p {
+            margin: 8px 0 0;
+            font-size: 1rem;
+            opacity: 0.95;
+        }
+        section {
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        section:last-of-type {
+            border-bottom: none;
+        }
+        h2 {
+            font-size: 1.3rem;
+            color: #ee2c49;
+            border-bottom: 2px solid #ee2c49;
+            padding-bottom: 8px;
+            margin-top: 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 12px 0;
+            font-size: 0.95rem;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f1f3f5;
+            width: 40%;
+        }
+        .churn-reasons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 12px;
+            margin: 16px 0;
+        }
+        .churn-reasons label {
+            font-size: 0.95rem;
+        }
+        .top-reason {
+            background: #fff3cd;
+            padding: 12px;
+            border-radius: 8px;
+            font-weight: bold;
+            margin: 16px 0;
+        }
+        .script-box {
+            background: #e7f3ff;
+            padding: 16px;
+            border-left: 5px solid #007bff;
+            border-radius: 6px;
+            margin: 16px 0;
+        }
+        .best-offer {
+            background: #d4edda;
+            padding: 12px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            text-align: center;
+            margin: 16px 0;
+        }
+        .emoji {
+            font-size: 1.4rem;
+            margin-right: 8px;
+        }
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #777;
+            padding: 20px 0;
+            border-top: 1px solid #eee;
+            margin-top: 20px;
+        }
+        @media (max-width: 600px) {
+            body { padding: 8px; }
+            header h1 { font-size: 1.3rem; }
+            h2 { font-size: 1.2rem; }
+            th, td { padding: 8px; font-size: 0.9rem; }
+            th { width: 45%; }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ACT Fibernet – Customer Retention Call Assist</h1>
+            
+        </header>
+
+        <section>
+            <h2><span class="emoji">👤</span>Customer Information</h2>
+            <h3>Customer Snapshot</h3>
+            <table>
+                <tr><th>Customer Name</th><td>Aashish Muttreja</td></tr>
+                <tr><th>Registered Mobile</th><td>9811627266</td></tr>
+                <tr><th>Account Number</th><td>1087654321</td></tr>
+                <tr><th>City</th><td>Bengaluru</td></tr>
+                <tr><th>Current Plan</th><td>ACT Incredible Standard Bonanz</td></tr>
+                <tr><th>Monthly Rental</th><td>₹ 2099</td></tr>
+                <tr><th>Tenure with ACT</th><td>54 months</td></tr>
+                <tr><th>Last Bill Amount</th><td>₹ 2099</td></tr>
+                <tr><th>Payment Status</th><td>Paid</td></tr>
+                <tr><th>Network Area</th><td>Bellandur</td></tr>
+            </table>
+        </section>
+
+        <section>
+            <h2><span class="emoji">📌</span>Possible Churn Reasons</h2>
+            <p>(Based on behavior, past complaints, and model inference)</p>
+            
+            <div class="top-reason">
+                Model-Detected Top Reason: Network or speed issues
+            </div>
+        </section>
+
+        <section>
+            <h2><span class="emoji">🧠</span>Recommended Call Script</h2>
+            
+            <div class="script-box">
+                <strong>Primary Recommendation:</strong><br>
+                Thanks for sharing that, Aashish Muttreja. Your usage qualifies for a free speed upgrade for a limited time, plus a network health check to ensure stable connectivity.
+            </div>
+            <p><strong>Talking Points:</strong></p>
+            <ul>
+                <li>Highlight current plan benefits relevant to usage</li>
+                <li>Address specific concern: Network or speed issues</li>
+                <li>Reinforce loyalty: “You’ve been with us for 54 months”</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2><span class="emoji">🎁</span>Offer Eligibility</h2>
+            <h3>Eligible Retention Offers</h3>
+            
+            <div class="best-offer">
+                ⭐ Best Offer to Pitch:<br>Free upgrade to 1000 Mbps for 12 months at no extra cost, with your current monthly price protected.
+            </div>
+        </section>
+
+        <section>
+            <h2><span class="emoji">🕒</span>Previous Customer Journey Actions</h2>
+            <h3>Engagement History (Last 60 Days)</h3>
+            <table>
+                <tr><th>Date</th><th>Channel</th><th>Action</th><th>Campaign / Touchpoint</th></tr>
+                <tr><td>05-Dec-2025</td><td>WhatsApp</td><td>Not Opened</td><td>ACT_Upgrade_Offer_Dec</td></tr>
+                <tr><td>07-Dec-2025</td><td>Email</td><td>Opened</td><td>ACT_Bill_Reminder</td></tr>
+                <tr><td>10-Dec-2025</td><td>Push</td><td>Ignored</td><td>ACT_Loyalty_Discount</td></tr>
+                
+            </table>
+        </section>
+
+        <section>
+            <h2><span class="emoji">🧾</span>Complaint & Support Summary</h2>
+            <p><strong>Recent Tickets:</strong></p>
+            <ul>
+                <li>TCKT-982341 – Intermittent Speed Drops – Closed</li>
+                <li>TCKT-987654 – Slow Upload Speed During Peak Hours – Resolved</li>
+            </ul>
+            
+        </section>
+        <div class="footer">
+            <p>&copy; 2025 ACT Fibernet. All rights reserved. | <a href="https://www.actcorp.in/legal/privacy-policy">Privacy Policy</a> | <a href="https://www.actcorp.in/terms-conditions">Terms & Conditions</a></p>
+        </div>
+    </div>
+		<script>
+	    var xmlhttp = new XMLHttpRequest(); // new HttpRequest instance
+        var url = "https://dc.oracleinfinity.io/v3/8f18b0c3da08493b195f72e2f165b96a?dcsverbose=true";
+        var eventid = Date.now();
+alert("here");
+        //generic settings
+        var email="kumar.rp1215+165065@gmail.com";
+        var CustomerID="1_165065";
+        var title = "eventdata";
+
+
+        var payload = {
+            "static": {
+                "wt.ti": title,
+                "domain": "www.oracle.come"
+            },
+            "events": [{
+                "ora.z_eventname": "TriggerACTDataPIPE",
+                "ora.z_email": email,
+                "ora.z_cname": "Aashish Muttreja,
+                "ora.z_acctno": "1087654321",
+                "ora.z_phone": "9811627266",
+                "ora.z_cplane": "ACT Incredible Standard Bonanz",
+				"ora.z_crent": "₹ 2099",
+				"ora.z_paymentstatus": "Paid",
+                "ora.z_eventid": eventid
+            }]
+        };
+
+        xmlhttp.open("POST", url);
+        xmlhttp.setRequestHeader("Content-Type", "application/json");
+        xmlhttp.send(JSON.stringify(payload));
+	</script>
+</body>
+</html>
