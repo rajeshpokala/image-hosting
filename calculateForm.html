@@ -28,7 +28,7 @@
       // Time difference in seconds
       const timeDiffSeconds = (clickTime - pageLoadTime) / 1000;
 	  
-	  capturedetails(buttonName,timeDiffSeconds);
+	  capturedetails(buttonName,timeDiffSeconds,clickTime,pageLoadTime);
 
       const clickData = {
         button: buttonName,
@@ -40,7 +40,7 @@
       console.log(clickData);
     }
 	
-	 function capturedetails(event,timetaken) {
+	 function capturedetails(event,timetaken,eventclicktime,pageLoadTime) {
 		const script = document.createElement('script');
 		script.src = "https://d.oracleinfinity.io/infy/acs/account/8f18b0c3da08493b195f72e2f165b96a/js/perso_tag/odc.js";
 		script.async = true;
@@ -52,6 +52,8 @@
 				"data": {
 					"ora.z_eventname": "timespentevent",
 					"ora.z_eventvalue": event,
+					"ora.z_eventclicktime": eventclicktime,
+					"ora.z_pageLoadTime": pageLoadTime,
 					"ora.z_timetaken": timetaken
 				}
 			});
@@ -63,3 +65,4 @@
 
 </body>
 </html>
+
