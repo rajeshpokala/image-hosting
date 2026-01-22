@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Button Click Timer</title>
+</head>
+
+<body>
+
+  <h2>Click Tracking Example</h2>
+
+  <button onclick="handleButtonClick('button1')">
+    Button 1
+  </button>
+
+  <button onclick="handleButtonClick('button2')">
+    Button 2
+  </button>
+
+  <script>
+    // Page load time
+    const pageLoadTime = new Date();
+
+    console.log("Page loaded at:", pageLoadTime);
+
+    function handleButtonClick(buttonName) {
+      const clickTime = new Date();
+
+      // Time difference in seconds
+      const timeDiffSeconds = (clickTime - pageLoadTime) / 1000;
+	  
+	  capturedetails(buttonName,timeDiffSeconds);
+
+      const clickData = {
+        button: buttonName,
+        pageLoadTime: pageLoadTime.toISOString(),
+        clickTime: clickTime.toISOString(),
+        timeFromLoadInSeconds: timeDiffSeconds
+      };
+
+      console.log(clickData);
+    }
+	
+	 function capturedetails(event,timetaken) {
+		const script = document.createElement('script');
+		script.src = "https://d.oracleinfinity.io/infy/acs/account/8f18b0c3da08493b195f72e2f165b96a/js/perso_tag/odc.js";
+		script.async = true;
+
+		script.onload = () => {
+			// Code to execute after the script has loaded
+			ORA.click({
+				"sendSessionInfo": true,
+				"data": {
+					"ora.z_eventname": "timespentevent",
+					"ora.z_eventvalue": event,
+					"ora.z_timetaken": timetaken
+				}
+			});
+		}
+		document.head.appendChild(script);
+	}
+	
+  </script>
+
+</body>
+</html>
